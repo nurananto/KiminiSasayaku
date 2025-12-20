@@ -1,0 +1,28 @@
+{
+  "type": "manga",
+  "title": "Kimi ni Sasayaku",
+  "alternativeTitle": "君に囁く",
+  "cover": "https://cdn.nuranantoscans.my.id/covers/KiminiSasayaku-cover.webp",
+  "description": "Bagaimana jika suatu hari, suara Streamer ASMR yang seharusnya hanya kamu dengar lewat earphone, tiba-tiba terdengar tepat di samping telingamu— Apakah ini adalah sebuah ‘halusinasi’? Ataukah suaranya itu benar-benar nyata?",
+  "author": "Megurumiru",
+  "artist": "Megurumiru",
+  "genre": [
+    "Shounen",
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "status": "END",
+  "endChapter": "Oneshot",
+  "views": 0,
+  "links": {
+    "mangadex": "",
+    "raw": "https://comic-walker.com/detail/KC_008254_S/episodes/KC_0082540000200011_E?episodeType=latest"
+  },
+  "repoOwner": "nurananto",
+  "repoName": "KiminiSasayaku",
+  "imagePrefix": "Image",
+  "imageFormat": "webp",
+  "lockedChapters": []
+}
