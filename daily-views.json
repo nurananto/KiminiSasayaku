@@ -1,22 +1,6 @@
 {
-  "lastCleanup": "2026-01-20T00:17:06+07:00",
+  "lastCleanup": "2026-01-23T00:21:42+07:00",
   "dailyRecords": {
-    "2026-01-13": {
-      "manga": 1,
-      "chapters": {}
-    },
-    "2026-01-14": {
-      "manga": 1,
-      "chapters": {
-        "Oneshot": 1
-      }
-    },
-    "2026-01-15": {
-      "manga": 8,
-      "chapters": {
-        "Oneshot": 7
-      }
-    },
     "2026-01-16": {
       "manga": 3,
       "chapters": {
@@ -45,6 +29,12 @@
       "manga": 3,
       "chapters": {
         "Oneshot": 1
+      }
+    },
+    "2026-01-23": {
+      "manga": 9,
+      "chapters": {
+        "Oneshot": 6
       }
     }
   }
