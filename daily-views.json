@@ -1,5 +1,5 @@
 {
-  "lastCleanup": "2026-02-24T17:00:49.682Z",
+  "lastCleanup": "2026-03-01T22:07:27.396Z",
   "dailyRecords": {
     "2026-02-14": {
       "manga": 2,
@@ -40,6 +40,10 @@
       "chapters": {}
     },
     "2026-02-24": {
+      "manga": 1,
+      "chapters": {}
+    },
+    "2026-03-01": {
       "manga": 1,
       "chapters": {}
     }
