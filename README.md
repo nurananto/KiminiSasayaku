@@ -12,9 +12,7 @@
 | Judul Alternatif | 君に囁く |
 | Author | Megurumiru |
 | Tipe | Manga (Hitam Putih) |
-| Status | Tamat (Chapter Oneshot) |
 | Genre | Shounen · Comedy · Romance · School Life · Slice of Life |
-| Chapter | 1 chapter |
 
 ## Link
 
