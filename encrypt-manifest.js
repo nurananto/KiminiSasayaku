@@ -270,7 +270,8 @@ function encryptManifest(filePath, secretKey) {
             return false;
         }
         
-        console.log(`  📊 Total pages: ${manifest.pages.length}`);
+        const isTiling = manifest.tiling === true;
+        console.log(`  📊 Total pages: ${manifest.pages.length}${isTiling ? ' (tiling enabled)' : ''}`);
         console.log(`  🔐 Encrypting...`);
         
         // Encrypt each page URL
@@ -278,9 +279,20 @@ function encryptManifest(filePath, secretKey) {
             return encryptText(pageUrl, secretKey);
         });
         
+        // Encrypt grids and orders if tiling manifest
+        if (isTiling && Array.isArray(manifest.grids) && Array.isArray(manifest.orders)) {
+            manifest.grids = manifest.grids.map(grid => {
+                return encryptText(JSON.stringify(grid), secretKey);
+            });
+            manifest.orders = manifest.orders.map(order => {
+                return encryptText(JSON.stringify(order), secretKey);
+            });
+            console.log(`  🧩 Encrypted ${manifest.grids.length} grids + orders`);
+        }
+        
         // Add encryption marker
         manifest.encrypted = true;
-        manifest.encryption_version = '1.0';
+        manifest.encryption_version = isTiling ? '2.0' : '1.0';
         
         // Save encrypted manifest
         const jsonString = JSON.stringify(manifest, null, 2);
@@ -303,7 +315,7 @@ function main() {
     const modeText = FORCE_SCAN_ALL ? '🔥 FORCE MODE: Scan ALL manifests' : '🔍 Smart detection mode';
     
     console.log('╔═══════════════════════════════════════╗');
-    console.log('║   MANIFEST ENCRYPTION SCRIPT v3.0     ║');
+    console.log('║   MANIFEST ENCRYPTION SCRIPT v4.0     ║');
     console.log(`║ ${modeText.padEnd(39)}║`);
     console.log('╚═══════════════════════════════════════╝\n');
     
